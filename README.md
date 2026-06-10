@@ -47,12 +47,12 @@ Este proyecto simula ese contexto end-to-end.
 fraud-detection/
 │
 ├── data/
-│   └── creditcard.csv              ← Dataset de Kaggle (no incluido, ver instrucciones)
+│   └── creditcard.csv                   ← Dataset de Kaggle (no incluido, ver instrucciones)
 │
 ├── notebooks/
-│   └── fraud_detection.ipynb       ← Pipeline completo: EDA → FE → Modelos → SHAP → KPIs
+│   └── fraud_detection.ipynb            ← Pipeline completo: EDA → FE → Modelos → SHAP
 │
-├── outputs/                        ← Gráficos generados por el notebook
+├── outputs/                             ← Gráficos generados por el notebook
 │   ├── 01_class_distribution.png
 │   ├── 02_amount_time_analysis.png
 │   ├── 03_discriminative_features.png
@@ -63,7 +63,11 @@ fraud-detection/
 │   ├── 08_canary_distribution.png
 │   ├── 09_shap_beeswarm.png
 │   ├── 10_shap_waterfall.png
-│   └── 11_economic_impact.png
+│   ├── 11_economic_impact.png
+│   └── carousel_fraud_v2.pdf            ← Carousel de LinkedIn (10 slides)
+│
+├── dashboard/
+│   └── fraud_dashboard.jsx              ← Dashboard interactivo en React
 │
 ├── requirements.txt
 ├── .gitignore
