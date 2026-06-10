@@ -108,13 +108,13 @@ Para conectar la matemática del modelo con las decisiones financieras del negoc
     ┌──────────────────────────────▼───────────────────────────┐
     │          FEATURE ENGINEERING — DETERMINÍSTICO            │
     │   (sin estadísticas del dataset → sin riesgo de leakage) │
-    │   Temporales · Monto · Velocidad · Interacciones PCA    │
+    │   Temporales · Monto · Velocidad · Interacciones PCA     │
     └──────────────────────────────┬───────────────────────────┘
                                   │
-    ┌──────────────────────────────▼───────────────────────────┐
-    │              SPLIT ESTRATIFICADO (80/20)                 │
-    │           ⚠️ TODO lo que sigue es post-split             │
-    └─────────────┬───────────────────────────────┬────────────┘
+    ┌──────────────────────────────▼──────────────────────────┐
+    │              SPLIT ESTRATIFICADO (80/20)                │
+    │           ⚠️ TODO lo que sigue es post-split            |
+    └─────────────┬───────────────────────────────┬───────────┘
                   │                               │
     ┌─────────────▼──────────────┐  ┌─────────────▼──────────────┐
     │     TRAIN (fit)            │  │     TEST (transform only)  │
@@ -125,8 +125,8 @@ Para conectar la matemática del modelo con las decisiones financieras del negoc
     └─────────────┬──────────────┘  └─────────────┬──────────────┘
                   │                               │
     ┌─────────────▼───────────────────────────────▼────────────┐
-    │                  ENTRENAMIENTO                            │
-    │   LR (baseline) → RF → XGBoost → LightGBM (campeón)     │
+    │                  ENTRENAMIENTO                           │
+    │   LR (baseline) → RF → XGBoost → LightGBM (campeón)      │
     └──────────────────────────────┬───────────────────────────┘
                                   │
     ┌──────────────────────────────▼───────────────────────────┐
