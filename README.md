@@ -104,13 +104,13 @@ Para conectar la matemática del modelo con las decisiones financieras del negoc
     │   Distribución de clases · Análisis temporal · Effect    │
     │   size de features PCA                                   │
     └──────────────────────────────┬───────────────────────────┘
-                                  │
+                                   │
     ┌──────────────────────────────▼───────────────────────────┐
     │          FEATURE ENGINEERING — DETERMINÍSTICO            │
     │   (sin estadísticas del dataset → sin riesgo de leakage) │
     │   Temporales · Monto · Velocidad · Interacciones PCA     │
     └──────────────────────────────┬───────────────────────────┘
-                                  │
+                                   │
     ┌──────────────────────────────▼──────────────────────────┐
     │              SPLIT ESTRATIFICADO (80/20)                │
     │            TODO lo que sigue es post-split              |
@@ -128,13 +128,13 @@ Para conectar la matemática del modelo con las decisiones financieras del negoc
     │                  ENTRENAMIENTO                           │
     │   LR (baseline) → RF → XGBoost → LightGBM (campeón)      │
     └──────────────────────────────┬───────────────────────────┘
-                                  │
+                                   │
     ┌──────────────────────────────▼───────────────────────────┐
     │              EVALUACIÓN + CANARY ANALYSIS                │
     │   PR-AUC · Recall · Threshold sweep · Feature importance │
     │   3 perspectivas + umbral canario                        │
     └──────────────────────────────┬───────────────────────────┘
-                                  │
+                                   │
     ┌──────────────────────────────▼───────────────────────────┐
     │              SHAP + IMPACTO ECONÓMICO                    │
     │   Explicabilidad global/individual · Ahorro estimado     │
