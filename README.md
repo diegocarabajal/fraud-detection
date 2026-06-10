@@ -72,8 +72,6 @@ fraud-detection/
 
 ---
 
----
-
 ## 🖥️ Dashboard Interactivo (Simulador de Impacto en Vivo)
 
 Para conectar la matemática del modelo con las decisiones financieras del negocio, encapsulé el pipeline en una interfaz interactiva de React. El dashboard funciona como un **simulador operativo en tiempo real** donde los equipos de Risk u Operaciones pueden mover el umbral de decisión y visualizar de inmediato el trade-off financiero ($122 por Falso Negativo vs. $5 por Falso Positivo).
