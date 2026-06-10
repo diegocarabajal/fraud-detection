@@ -113,7 +113,7 @@ Para conectar la matemática del modelo con las decisiones financieras del negoc
                                   │
     ┌──────────────────────────────▼──────────────────────────┐
     │              SPLIT ESTRATIFICADO (80/20)                │
-    │           ⚠️ TODO lo que sigue es post-split            |
+    │            TODO lo que sigue es post-split              |
     └─────────────┬───────────────────────────────┬───────────┘
                   │                               │
     ┌─────────────▼──────────────┐  ┌─────────────▼──────────────┐
@@ -256,9 +256,13 @@ jupyter notebook notebooks/fraud_detection.ipynb
 
 ---
 
-## 🎓 Contexto Académico
+## 🚀 Origen y Motivación (Desafío Personal)
 
-Proyecto desarrollado en el marco de la **Maestría en Ciencia de Datos** — Explotación de Datos y Gestión del Conocimiento — Universidad Austral (Edición #21, 2° año).
+Este proyecto no nace como una entrega académica obligatoria, sino como un **desafío de ingeniería personal**. 
+
+Estando en el 2° año de la **Maestría en Ciencia de Datos** (Universidad Austral), quise ir más allá de los modelos teóricos de laboratorio. Mi objetivo fue autoevaluarme y diseñar un pipeline *end-to-end* con las restricciones, metodologías y dolores reales que enfrentan los equipos de Data Science y Risk Mitigating en industrias de alta transaccionalidad (Fintech/E-commerce). 
+
+Buscaba responder una pregunta clave: *¿Cómo se defienden, auditan y traducen a impacto financiero las métricas de un modelo cuando operás bajo un desbalance extremo del 0.17%?*
 
 ---
 
